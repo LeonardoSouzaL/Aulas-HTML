@@ -1,0 +1,70 @@
+<!-- Formação da Tabela!
+<table></table> = define a tabela.
+<caption></caption> = Legenda
+<tr></tr> = Adiciona linha na Tabela
+<th></th> = Adiciona uma célula de cabeçalho e o texto fica em negrito
+<td></td> = Adiciona uma célular de dado comum alinha a esquerda
+
+A tabela possui uma semântica dela mesma
+
+<thead></thead> = Cabeçalho
+<tbody></tbody> = Corpo da Tabela
+<tfoot></tfoot> = Rodapé da tabela
+
+<style></style> = Pode ser colocado no Head para fazer alterações rapidas, porem, não é utilizado dessa forma.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Estilo da tabela*/
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+     <h1>Tabela</h1>
+<table>
+    <caption>Cadastro de Clientes</caption>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>E-mail</th>
+            <th>Telefone</th>
+            <th>Cargo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Leonardo Souza Leite</td>
+            <td>25 anos</td>
+            <td>leonardo@email.com</td>
+            <td>(11) 993213200</td>
+            <td>CLT</td>
+        </tr>
+        <tr>
+           <td>Vittoria Fiuza</td>
+            <td>24 anos</td>
+            <td>vittoria@email.com</td>
+            <td>(11) 993213200</td>
+            <td>CLT</td> 
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="4"></td>
+            <td>Total</td>
+        </tr>
+    </tfoot>
+</table> 
+</body>
+</html>
+
