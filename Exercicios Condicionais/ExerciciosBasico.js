@@ -6,6 +6,7 @@ Nível Básico
 1. Verificar maioridade:
     1. Peça ao usuário uma idade.
     2. Use um `if-else` para verificar se ele é maior ou menor de idade.
+*/
 
 const idadeUsuario = Number(prompt("Digite sua idade: (ex: 25)"));
 
@@ -15,13 +16,14 @@ if (idadeUsuario >= 18) {
 } else {
     alert("Menor de idade!!")
 }
-*/
+
 
 /* --------------------------------------------------------------------
 2. Verificar se um número é positivo ou negativo:
     - Peça ao usuário para inserir um número.
     - Use um `if-else` para verificar se o número é positivo, negativo.
     - OBS: *Por hora* considere o 0 como sendo um número negativo.
+*/
 
 const PositivoNegativo = Number(prompt("Digite um numero inteiro: "));
 
@@ -30,13 +32,13 @@ if (PositivoNegativo > 0) {
 } else {
     alert("Seu numero é Negativo!!")
 } 
-*/
+
 
 /*--------------------------------------------------------------------
 3. Aprovação em uma prova:
     - O usuário insere a nota de um aluno (0 a 100).
     - Se a nota for maior ou igual a 60, exibir "Aprovado", senão "Reprovado".
-
+*/
 
 const NotaUsuario = Number(prompt("Digite sua nota: (0 a 100)"));
 
@@ -45,13 +47,13 @@ if (NotaUsuario >= 60) {
 } else {
     alert("Reprovado")
 }
-*/
+
 
 /*-------------------------------------------------------------------- 
 4. Verificar se um número é positivo, negativo ou zero:
     - Peça ao usuário para inserir um número.
     - Use um `if-else` para verificar se o número é positivo, negativo ou zero.
-
+*/
 
 const PNZ = Number(prompt("Digite um Numero:"));
 
@@ -62,13 +64,13 @@ if (PNZ > 0) {
 } else {
     alert("Numero é Zero!!")
 }
-*/
+
 
 /*--------------------------------------------------------------------
 5. Classificação de idade:
     - Peça ao usuário para inserir sua idade.
     - Exiba se ele é "Criança" (0-12), "Adolescente" (13-17) ou "Adulto" (18+).
-
+*/
 
 const faixa = Number(prompt("Digite sua idade: "));
 
@@ -79,13 +81,13 @@ if (faixa >= 0 && faixa <= 12) {
 } else {
     alert("Você é Adulto")
 }
-*/
+
 
 /*-------------------------------------------------------------------- 
 6. Verificar se um número é par ou ímpar:
     - Peça ao usuário para inserir um número.
     - Use o operador `%` para verificar se o número é divisível por 2.
-
+*/
 
 const ParImpar = Number(prompt("Digite um numero:"));
 
@@ -94,7 +96,7 @@ if (ParImpar % 2 === 0) {
 } else {
     alert("Seu numero é Ímpar!!");
 }
-*/
+
 
 /*-------------------------------------------------------------------- 
 Nível Intermediário
@@ -102,7 +104,7 @@ Nível Intermediário
 1. Calculadora simples:
     - Peça dois números e uma operação (`+`, `-`, `*`, `/`).
     - Use um `if-else` para calcular o resultado e exibi-lo.
-
+*/
 
 const N1 = Number(prompt("Digite um Numero: "));
 const Operador = prompt ("Digite a operação que deseja com os sinais Soma(+), Subtração(-), Multiplicação(*) ou Divisão(/): ");
@@ -124,13 +126,13 @@ if (Operador === "+") {
 } else {
     alert("Ops!! Algum numero ou operação invalida, tente novamente!!")
 }
-*/
+
 
 /* -------------------------------------------------------------------- 
 2. Maior entre três números:
     - O usuário insere três números.
     - Use `if-else` para determinar e exibir o maior.
-
+*/
 
 const N1 = Number(prompt("Digite um Numero: "));
 const N2 = Number(prompt("Digite um outro Numero: "));
@@ -145,12 +147,13 @@ if (N1 > N2 && N1 > N3) {
 } else {
     alert("Ops!! Algum numero invalido, tente novamente!!")
 }
-*/
+
 
 /* -------------------------------------------------------------------- 
 3. Desconto em compras
     - Se o valor da compra for maior que R$ 100, aplique 10% de desconto.
     - Caso contrário, exiba o valor normal.
+*/
 
 const valorOriginal = Number(prompt("Digite o valor gasto em compras: "))
 let valorFinal;
@@ -162,13 +165,13 @@ if (valorOriginal > 100) {
     valorFinal = valorOriginal;
     alert(`O valor da sua compra ficou: R$ ${valorFinal}`)
 }
-*/
+
 
 /*-------------------------------------------------------------------- 
 4. **Sistema de login simples:**
     - O usuário insere um nome de usuário e senha.
     - Se `usuario == "admin"` e `senha == "1234"`, exibir "Login bem-sucedido", caso contrário "Acesso negado".
-
+*/
 
 const usuario = prompt("Digite seu Login:");
 const senha = prompt("Digite sua Senha:");
@@ -182,7 +185,7 @@ if ((ehAdmin && senhaCorreta) || (ehGerente && senhaCorreta)) {
 } else {
     alert("Acesso Negado!!")
 }
-*/
+
 
 /*-------------------------------------------------------------------- 
 Nível Avançado
@@ -190,7 +193,7 @@ Nível Avançado
 1. **Classificação de triângulos:**
     - O usuário insere três lados.
     - Verifique se forma um triângulo e classifique como equilátero, isósceles ou escaleno.
-
+*/
 
 const L1 = Number(prompt("Insira o tamanho do primeiro lado: "));
 const L2 = Number(prompt("Insira o tamanho do segundo lado: "));
@@ -203,11 +206,77 @@ if (L1 === L2 && L2 === L3) {
 } else {
     alert("O seu triângulo é: Escaleno")
 }
-*/
 
-/*
-2. **Conversão de notas para conceitos:**
+
+/*-------------------------------------------------------------------- 
+2. Conversão de notas para conceitos:
     - O usuário insere uma nota (0-100).
     - Converta para conceitos:
     - `A` (90-100), `B` (80-89), `C` (70-79), `D` (60-69), `F` (<60).
 */
+
+const notaConver = Number(prompt("Digite sua nota: (0 - 100)"));
+
+if (notaConver >= 90 && notaConver <= 100) {
+    alert("Sua nota convertida é: A");
+} else if (notaConver >= 80 && notaConver <= 89) {
+    alert("Sua nota convertida é: B");
+} else if (notaConver >= 70 && notaConver <= 79) {
+    alert("Sua nota convertida é: C");
+} else if (notaConver >= 60 && notaConver <= 69) {
+    alert("Sua nota convertida é: D");
+} else if (notaConver < 60 && notaConver >= 0) {
+    alert("Sua nota convertida é: F");
+} else {
+    alert("Nota inválida");
+}
+
+
+/*-------------------------------------------------------------------- 
+3. Cálculo de IMC:
+    - Peça peso e altura.
+    - Calcule o IMC e classifique como abaixo do peso, normal, sobrepeso ou obesidade.
+*/
+
+const pesoUsuario = Number(prompt("Digite seu peso em KG:(ex: 70)"))
+.isNaN()
+.trim();
+const altura = Number(prompt("Digite sua Altura em M:(ex:1.70)"))
+.isNaN()
+.trim();
+
+if (Number.isNaN(pesoUsuario) || Number.isNaN(altura))  {
+    alert("Digite apena números!")
+} else if (pesoUsuario <= 0 || altura <= 0){
+    alert("Peso e altura devem ser positivos!")
+} else if(altura > 3){
+    alert("Altura parece estar errada!")
+} else {
+    const IMC = (altura**2) / pesoUsuario;
+    alert(`Seu IMC: ${IMC.toFixed(2)}`);
+
+    if (IMC < 18.5) {
+        alert("Abaixo do Peso!")
+    } else if (IMC < 25) {
+        alert("Peso Normal!")
+    } else if (IMC < 30){
+        alert("Sobrepeso!")
+    } else {
+        alert("Obesidade!")
+    }
+}
+
+
+/*-------------------------------------------------------------------- 
+4. **Validação de ano bissexto:**
+    - Peça um ano e verifique se é bissexto.
+    - Um ano é bissexto se for divisível por 4, mas não por 100, exceto se for divisível por 400.
+*/
+
+const anoBi = parseInt(prompt("Digite um ano:"));
+
+if ((anoBi % 4 === 0 && anoBi % 100 !== 0) || (anoBi % 400 === 0)) {
+    alert(`${anoBi} é um ano bissexto.`);
+} else {
+    alert(`${anoBi} não é um ano bissexto.`);
+}
